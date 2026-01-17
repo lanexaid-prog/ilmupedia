@@ -1,7 +1,7 @@
 proxies:
 
 - name: INDONESIA
-  server: 104.18.2.2
+  server: 104.17.3.81
   port: 443
   type: trojan
   password: a1c93ee4-84c9-42c9-b7ed-f86c65b72f67
