@@ -1,61 +1,15 @@
 proxies:
 
-- name: "howdy sg3"
-  type: trojan
-  server: sg3-trojan.bonds.id
+- name: INDONESIA
+  server: 104.18.2.2
   port: 443
-  password: 17cb4740-0bcc-xx-xxxx-xxxx
-  udp: true
-  sni: bug.paketmu.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "Howdy sg4"
   type: trojan
-  server: sg4-trojan.bonds.id
-  port: 443
-  password: 5b3b8590-0bcc-xxxx-xxxx-xxxx
-  udp: true
-  sni: bug.paketmu.com
-  alpn:
-     - h2
-     - http/1.1
+  password: a1c93ee4-84c9-42c9-b7ed-f86c65b72f67
+  network: ws
+  sni: samudra.basecampsedekahbumi.my.id
   skip-cert-verify: true
-  
-- name: "opentunnel"
-  type: trojan
-  server: idt-1.opensvr.net
-  port: 443
-  password: pasword akunmu
   udp: true
-  sni: bug.paketmu.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "howdy sg5"
-  type: trojan
-  server: sg5-trojan.bonds.id
-  port: 443
-  password: 37c48ad0-xx-xxx-xxxx-xxx
-  udp: true
-  sni: bug.paketmu.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-  
-- name: "howdy biznet"
-  type: trojan
-  server: id2-trojan.bonds.id
-  port: 443
-  password: af0863c0-xx-xxx-xxx
-  udp: true
-  sni: bug.paket.mu.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
+  ws-opts:
+    path: /trojan-ws
+    headers:
+        Host: samudra.basecampsedekahbumi.my.id
