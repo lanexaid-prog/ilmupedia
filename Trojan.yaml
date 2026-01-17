@@ -1,0 +1,61 @@
+proxies:
+
+- name: "howdy sg3"
+  type: trojan
+  server: sg3-trojan.bonds.id
+  port: 443
+  password: 17cb4740-0bcc-xx-xxxx-xxxx
+  udp: true
+  sni: bug.paketmu.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "Howdy sg4"
+  type: trojan
+  server: sg4-trojan.bonds.id
+  port: 443
+  password: 5b3b8590-0bcc-xxxx-xxxx-xxxx
+  udp: true
+  sni: bug.paketmu.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+  
+- name: "opentunnel"
+  type: trojan
+  server: idt-1.opensvr.net
+  port: 443
+  password: pasword akunmu
+  udp: true
+  sni: bug.paketmu.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "howdy sg5"
+  type: trojan
+  server: sg5-trojan.bonds.id
+  port: 443
+  password: 37c48ad0-xx-xxx-xxxx-xxx
+  udp: true
+  sni: bug.paketmu.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+  
+- name: "howdy biznet"
+  type: trojan
+  server: id2-trojan.bonds.id
+  port: 443
+  password: af0863c0-xx-xxx-xxx
+  udp: true
+  sni: bug.paket.mu.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
